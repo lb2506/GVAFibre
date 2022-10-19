@@ -1,0 +1,104 @@
+.footer{
+  color: white;
+  padding: 67px 0;
+
+  &__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+  }
+
+  .top{
+
+    &__blockFollow, &__blockContact{
+      font-size: 20px;
+      font-family: 'Futura PT Bold Oblique';
+      letter-spacing: 1px;
+    }
+  }
+
+  .blockFollow{
+    &__img{
+      height: 24px;
+      margin: 0 6px;
+      vertical-align: middle;
+    }
+  }
+
+  .blockContact{
+    &__contactUs, &__agencies{
+      text-decoration: none;
+      color: white;
+    }
+  }
+
+  &__bottom{
+    list-style: none;
+    display: flex;
+    margin-top: 40px;
+
+    li{
+      font-size: 18px;
+      font-family: 'Futura PT Medium';
+    }
+  }
+
+  .br{
+    display: none;
+  }
+
+  .span{
+    margin: 0 10px 0 5px;
+    color: white;
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 1024px){
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__top{
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top{
+      display: flex;
+      flex-direction: column;
+
+      &__blockContact{
+        order: 0;
+      }
+
+      &__blockFollow{
+        order: 1;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .br{
+      display: block;
+    }
+
+    .span{
+      color: black;
+      display: block;
+      margin: 1px 0;
+    }
+
+    &__bottom{
+      flex-direction: column;
+    }
+  }
+}
